@@ -17,12 +17,22 @@ var distDir = (function () {
 })()
 
 module.exports = {
+  // entry: {
+  //   popup:            './src/index.js',
+  //   csv_editor:       './src/csv_editor.js',
+  //   vision_editor:    './src/vision_editor/index.tsx',
+  //   desktop_screenshot_editor: './src/desktop_screenshot_editor/index.tsx',
+  //   options:          './src/options.ts',
+  //   content_script:   './src/ext/content_script/index.js',
+  //   inject:           './src/ext/inject.js',
+  //   background:       './src/ext/bg.js'
+  // },
   entry: {
     popup:            './src/index.js',
     csv_editor:       './src/csv_editor.js',
-    vision_editor:    './src/vision_editor/index.tsx',
-    desktop_screenshot_editor: './src/desktop_screenshot_editor/index.tsx',
-    options:          './src/options.ts',
+    // vision_editor:    './src/vision_editor/index.tsx',
+    // desktop_screenshot_editor: './src/desktop_screenshot_editor/index.tsx',
+    // options:          './src/options.ts',
     content_script:   './src/ext/content_script/index.js',
     inject:           './src/ext/inject.js',
     background:       './src/ext/bg.js'
@@ -92,10 +102,10 @@ module.exports = {
     new CleanWebpackPlugin(path.resolve(__dirname, distDir)),
     new CopyWebpackPlugin([
       { from: 'extension' },
-      'webextension-imagesearch-1.0.1-extension/extension/js/kantusearch.js',
-      'webextension-imagesearch-1.0.1-extension/extension/js/kantusearch.wasm',
-      'webextension-imagesearch-1.0.1-extension/extension/js/worker-main.js',
-      'webextension-imagesearch-1.0.1-extension/extension/js/worker.js'
+      // 'webextension-imagesearch-1.0.1-extension/extension/js/kantusearch.js',
+      // 'webextension-imagesearch-1.0.1-extension/extension/js/kantusearch.wasm',
+      // 'webextension-imagesearch-1.0.1-extension/extension/js/worker-main.js',
+      // 'webextension-imagesearch-1.0.1-extension/extension/js/worker.js'
     ]),
     new HtmlWebpackIncludeSiblingChunksPlugin(),
     new HtmlWebpackPlugin({

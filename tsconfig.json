@@ -19,7 +19,7 @@
     // "isolatedModules": true,               /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
 
     /* Strict Type-Checking Options */
-    "strict": true ,                          /* Enable all strict type-checking options. */
+    "strict": false ,                          /* Enable all strict type-checking options. */
     // "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
     // "strictNullChecks": true,              /* Enable strict null checks. */
     // "strictFunctionTypes": true,           /* Enable strict checking of function types. */
@@ -68,6 +68,15 @@
     // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
+  // "exclude": [
+  //   "./test-fileaccess",
+  //   "./test-fileaccess2",
+  //   "./test-xy",
+  //   "./test-xy-v1031",
+  //   "./webextension-imagesearch-1.0.1-extension",
+  //   "./imagesearch-testextension",
+  //   "./test-desktopsearch"
+  // ]
   "exclude": [
     "./test-fileaccess",
     "./test-fileaccess2",
@@ -75,6 +84,8 @@
     "./test-xy-v1031",
     "./webextension-imagesearch-1.0.1-extension",
     "./imagesearch-testextension",
-    "./test-desktopsearch"
+    "./test-desktopsearch",
+    "./src/common/imagesearch",
+    "./src/vision_editor",
   ]
 }
