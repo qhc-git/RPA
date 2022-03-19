@@ -2,7 +2,10 @@
 
 .dashboard {
   @include flexcol();
-  flex: 1;
+  width: auto;
+  min-width: 500px;
+  height: 100%;
+  overflow: hidden;
   margin: 15px 15px 0;
 
   .flex-row {
